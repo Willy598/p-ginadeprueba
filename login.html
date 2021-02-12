@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Prueba #1</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="styles.css">
+	<script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+</head>
+<body>
+	
+<div class="wrapper">
+	<div class="header">
+		<div class="logo">
+			<p>Esto de es prueba</p>
+		</div>
+		<div class="menu">
+			<ul>
+				<li class="active"><a>Login</a></li>
+				<li><a>No tocar</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="main_container">
+		<div class="main_item login_wrap" style="display: block;">
+			<div class="title">Lista para el reto?!!</div>
+			<div class="form">
+				<form method="post" action="home.html" onsubmit="return validate(event);">
+					<div class="form_wrap">
+						<label for="uname">Username</label>
+						<div class="input_field">
+							<input type="text" class="input" name="username" id="uname">
+							<i class="fas fa-user"></i>
+						</div>
+						<div class="error_msg" id="un_err_msg"></div>
+					</div>
+					<div class="form_wrap">
+						<label for="password">Password</label>
+						<div class="input_field">
+							<input type="password" class="input" name="password" id="password">
+							<i class="fas fa-key"></i>
+						</div>
+						<div class="error_msg" id="pw_err_msg"></div>
+					</div>
+					<div class="form_wrap">
+						<input type="submit" value="Login">
+					</div>
+				</form>
+			</div>
+		</div>
+		<div class="main_item aboutus" style="display: none;">
+			<div class="title">A po tu eres loca</div>
+			<div class="content">
+				<p>
+					Te dije que no lo tocara
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script src="scripts.js"></script>
+
+</body>
+</html>
